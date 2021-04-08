@@ -21,7 +21,7 @@ or if you prefer:
 
 ### Application + Postgres DB 
 
-#### Building the app_dockertutorial Docker image (This is optional, if you don't build it, the image will be downloaded from Docker Hub)
+#### Building the app_dockertutorial Docker image (This is optional, if you don't build it, the image will be download from Docker Hub)
 
 At the project root directory, run the command:
  	
