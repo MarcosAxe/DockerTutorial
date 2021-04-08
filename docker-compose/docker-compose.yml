@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  app_dockertutorial:
+    image: 'app_dockertutorial:latest'
+    container_name: app_dockertutorial
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=${DATASOURCE_URL}
+      - SPRING_DATASOURCE_USERNAME=${DATASOURCE_USERNAME}
+      - SPRING_DATASOURCE_PASSWORD=${DATASOURCE_PASSWORD}
+    depends_on:
+      - db_dockertutorial
+  db_dockertutorial:
+    image: postgres:13.2
+    container_name: db_dockertutorial
+    environment:
+      - POSTGRES_USER=${DATASOURCE_USERNAME}
+      - POSTGRES_PASSWORD=${DATASOURCE_PASSWORD}

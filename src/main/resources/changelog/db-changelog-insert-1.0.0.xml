@@ -1,0 +1,155 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.10.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.10.xsd">
+	
+	<changeSet author="Marcos Machado" id="2021-04-06 14:49 01">
+		<insert tableName="planets">
+			<column name="id" valueComputed="nextval('planets_seq')" />
+			<column name="name" value="Mercury" />
+			<column name="diameter" value="4879" />
+			<column name="gravity" value="3.7" />
+			<column name="rotation_period" value="1407.6" />
+			<column name="lenght_of_day" value="4222.6" />
+			<column name="distance_from_sun" value="57.9" />
+			<column name="orbital_period" value="88.0" />
+			<column name="mean_temperature" value="167" />
+			<column name="number_of_moons" value="0" />
+			<column name="ring_system" value="FALSE" />
+		</insert>
+	</changeSet>
+	
+	<changeSet author="Marcos Machado" id="2021-04-06 14:49 02">
+		<insert tableName="planets">
+			<column name="id" valueComputed="nextval('planets_seq')" />
+			<column name="name" value="Venus" />
+			<column name="diameter" value="12104" />
+			<column name="gravity" value="8.9" />
+			<column name="rotation_period" value="-5832.5" />
+			<column name="lenght_of_day" value="2802.0" />
+			<column name="distance_from_sun" value="108.2" />
+			<column name="orbital_period" value="224.7" />
+			<column name="mean_temperature" value="464" />
+			<column name="number_of_moons" value="0" />
+			<column name="ring_system" value="FALSE" />
+		</insert>
+	</changeSet>
+	
+	<changeSet author="Marcos Machado" id="2021-04-06 14:49 03">
+		<insert tableName="planets">
+			<column name="id" valueComputed="nextval('planets_seq')" />
+			<column name="name" value="Earth" />
+			<column name="diameter" value="12756" />
+			<column name="gravity" value="9.8" />
+			<column name="rotation_period" value="23.9" />
+			<column name="lenght_of_day" value="24.0" />
+			<column name="distance_from_sun" value="149.6" />
+			<column name="orbital_period" value="365.2" />
+			<column name="mean_temperature" value="15" />
+			<column name="number_of_moons" value="1" />
+			<column name="ring_system" value="FALSE" />
+		</insert>
+	</changeSet>
+	
+	<changeSet author="Marcos Machado" id="2021-04-06 14:49 04">
+		<insert tableName="planets">
+			<column name="id" valueComputed="nextval('planets_seq')" />
+			<column name="name" value="Mars" />
+			<column name="diameter" value="6792" />
+			<column name="gravity" value="3.7" />
+			<column name="rotation_period" value="24.6" />
+			<column name="lenght_of_day" value="24.7" />
+			<column name="distance_from_sun" value="227.9" />
+			<column name="orbital_period" value="687.0" />
+			<column name="mean_temperature" value="-65" />
+			<column name="number_of_moons" value="2" />
+			<column name="ring_system" value="FALSE" />
+		</insert>
+	</changeSet>
+	
+	<changeSet author="Marcos Machado" id="2021-04-06 14:49 05">
+		<insert tableName="planets">
+			<column name="id" valueComputed="nextval('planets_seq')" />
+			<column name="name" value="Jupiter" />
+			<column name="diameter" value="142984" />
+			<column name="gravity" value="23.1" />
+			<column name="rotation_period" value="9.9" />
+			<column name="lenght_of_day" value="9.9" />
+			<column name="distance_from_sun" value="778.6" />
+			<column name="orbital_period" value="4331" />
+			<column name="mean_temperature" value="-110" />
+			<column name="number_of_moons" value="79" />
+			<column name="ring_system" value="TRUE" />
+		</insert>
+	</changeSet>
+	
+	<changeSet author="Marcos Machado" id="2021-04-06 14:49 06">
+		<insert tableName="planets">
+			<column name="id" valueComputed="nextval('planets_seq')" />
+			<column name="name" value="Saturn" />
+			<column name="diameter" value="120536" />
+			<column name="gravity" value="9.0" />
+			<column name="rotation_period" value="10.7" />
+			<column name="lenght_of_day" value="10.7" />
+			<column name="distance_from_sun" value="1433.5" />
+			<column name="orbital_period" value="10747" />
+			<column name="mean_temperature" value="-140" />
+			<column name="number_of_moons" value="82" />
+			<column name="ring_system" value="TRUE" />
+		</insert>
+	</changeSet>
+	
+	<changeSet author="Marcos Machado" id="2021-04-06 14:49 07">
+		<insert tableName="planets">
+			<column name="id" valueComputed="nextval('planets_seq')" />
+			<column name="name" value="Uranus" />
+			<column name="diameter" value="51118" />
+			<column name="gravity" value="8.7" />
+			<column name="rotation_period" value="-17.2" />
+			<column name="lenght_of_day" value="17.2" />
+			<column name="distance_from_sun" value="2872.5" />
+			<column name="orbital_period" value="30589" />
+			<column name="mean_temperature" value="-195" />
+			<column name="number_of_moons" value="27" />
+			<column name="ring_system" value="TRUE" />
+		</insert>
+	</changeSet>
+	
+	<changeSet author="Marcos Machado" id="2021-04-06 14:49 08">
+		<insert tableName="planets">
+			<column name="id" valueComputed="nextval('planets_seq')" />
+			<column name="name" value="Neptune" />
+			<column name="diameter" value="49528" />
+			<column name="gravity" value="11.0" />
+			<column name="rotation_period" value="16.1" />
+			<column name="lenght_of_day" value="16.1" />
+			<column name="distance_from_sun" value="4495.1" />
+			<column name="orbital_period" value="59800" />
+			<column name="mean_temperature" value="-200" />
+			<column name="number_of_moons" value="14" />
+			<column name="ring_system" value="TRUE" />
+		</insert>
+	</changeSet>
+	
+	<changeSet author="Marcos Machado" id="2021-04-06 14:49 09">
+		<insert tableName="planets">
+			<column name="id" valueComputed="nextval('planets_seq')" />
+			<column name="name" value="Pluto" />
+			<column name="diameter" value="2370" />
+			<column name="gravity" value="0.7" />
+			<column name="rotation_period" value="-153.3" />
+			<column name="lenght_of_day" value="153.3" />
+			<column name="distance_from_sun" value="5906.4" />
+			<column name="orbital_period" value="90560" />
+			<column name="mean_temperature" value="-225" />
+			<column name="number_of_moons" value="5" />
+			<column name="ring_system" value="FALSE" />
+		</insert>
+	</changeSet>
+	
+	
+	
+</databaseChangeLog>

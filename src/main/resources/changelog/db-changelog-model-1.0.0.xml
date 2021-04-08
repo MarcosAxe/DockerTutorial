@@ -1,0 +1,43 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.10.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.10.xsd">
+    <changeSet author="Marcos Machado" id="2021-04-06 14:34 01">
+        <createTable tableName="planets">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="planets_pkey"/>
+            </column>
+            <column name="diameter" type="FLOAT8">
+                <constraints nullable="false"/>
+            </column>
+            <column name="distance_from_sun" type="FLOAT8">
+                <constraints nullable="false"/>
+            </column>
+            <column name="gravity" type="FLOAT8">
+                <constraints nullable="false"/>
+            </column>
+            <column name="lenght_of_day" type="FLOAT8">
+                <constraints nullable="false"/>
+            </column>
+            <column name="mean_temperature" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="number_of_moons" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="orbital_period" type="FLOAT8">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ring_system" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="rotation_period" type="FLOAT8">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Marcos Machado" id="2021-04-06 14:34 02">
+        <createSequence cacheSize="1" cycle="false" dataType="bigint" incrementBy="1" maxValue="9223372036854775807" minValue="1" sequenceName="planets_seq" startValue="1"/>
+    </changeSet>
+</databaseChangeLog>
