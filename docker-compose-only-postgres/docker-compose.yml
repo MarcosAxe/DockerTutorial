@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+
+  db_dockertutorial:
+    image: postgres:13.2
+    container_name: db_dockertutorial
+    environment:
+      - POSTGRES_USER=${DATASOURCE_USERNAME}
+      - POSTGRES_PASSWORD=${DATASOURCE_PASSWORD}
+    ports:
+      - "5432:5432"

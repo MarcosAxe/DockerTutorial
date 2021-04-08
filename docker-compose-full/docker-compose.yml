@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   app_dockertutorial:
-    image: 'app_dockertutorial:latest'
+    image: marcosaxe/app_dockertutorial:latest
     container_name: app_dockertutorial
     ports:
       - "8080:8080"
@@ -18,3 +18,4 @@ services:
     environment:
       - POSTGRES_USER=${DATASOURCE_USERNAME}
       - POSTGRES_PASSWORD=${DATASOURCE_PASSWORD}
+
