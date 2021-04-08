@@ -1,4 +1,4 @@
-# Docker Tutorial - Simple Spring Boot Rest Application with JPA/Hibernate/Liquidbase and Postgres DB
+# Docker Tutorial - Simple Spring Boot Rest Application with JPA/Hibernate/Liquibase and Postgres DB
 
 ## Requirements:
 
