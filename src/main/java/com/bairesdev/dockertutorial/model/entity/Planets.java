@@ -53,6 +53,5 @@ public class Planets {
     
     @Column(name = "ring_system", nullable = false)
     private Boolean ringSystem;
-    
    
 }

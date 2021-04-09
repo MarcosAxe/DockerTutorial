@@ -10,11 +10,11 @@
 
 At the project root directory, build with maven:
 
-	.\mvnw clean install
+	mvn clean install
 
 or if you prefer:
 
-	mvn clean install
+	.\mvnw clean install
 	
 
 ## Creating and starting the Docker containers
