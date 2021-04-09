@@ -10,28 +10,21 @@ import com.bairesdev.dockertutorial.model.repository.PlanetsRepository;
 
 @Service
 public class PlanetsService {
-	
+
 	private PlanetsRepository planetsRepository;
-	
-	
+
 	@Autowired
 	private PlanetsService(PlanetsRepository planetsRepository) {
 		super();
 		this.planetsRepository = planetsRepository;
 	}
 
-
-
-	public List<Planets> getAllPlanets(){
-		
+	public List<Planets> getAllPlanets() {
 		return planetsRepository.findAll();
-		
 	}
 
-
-
 	public Planets getPlanetByName(String name) {
-		return planetsRepository.findByName(name);
+		return planetsRepository.findByNameIgnoreCase(name);
 	}
 
 }

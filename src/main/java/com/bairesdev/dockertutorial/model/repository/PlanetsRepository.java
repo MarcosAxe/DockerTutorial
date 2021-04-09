@@ -6,6 +6,6 @@ import com.bairesdev.dockertutorial.model.entity.Planets;
 
 public interface PlanetsRepository extends JpaRepository<Planets, Long> {
 	
-	Planets findByName(String name);
+	Planets findByNameIgnoreCase(String name);
 	
 }

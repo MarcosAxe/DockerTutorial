@@ -1,4 +1,4 @@
-# Docker Tutorial - Simple Spring Boot Rest Application with JPA/Hibernate/Liquibase and Postgres DB
+# Docker Tutorial - Simple Spring Boot Rest Application with JPA/Hibernate/Liquibase and PostgreSQL DB
 
 ## Requirements:
 
@@ -6,7 +6,7 @@
 * In case you wish to run the Spring Boot Application outside the Docker Container, you will need Java 11, you can get it here: https://adoptopenjdk.net/ 
 
 
-## <a name="compiling">Compiling the java project</a>
+## <a name="compile">Compiling the java project</a>
 
 At the project root directory, build with maven:
 
@@ -19,7 +19,7 @@ or if you prefer:
 
 ## Creating and starting the Docker containers
 
-### Application + Postgres DB 
+### Application + PostgreSQL DB 
 
 #### Building the app_dockertutorial Docker image (This is optional, if you don't build it, the image will be download from Docker Hub)
 
@@ -38,7 +38,7 @@ Then run the command:
 	docker-compose up --remove-orphans -d
 	
 
-### Only Postgres DB exposing 5432 port (In case you want to run the Spring Boot Application outside the Docker Container)
+### Only PostgreSQL DB exposing 5432 port (In case you want to run the Spring Boot Application outside the Docker Container)
  
  	
 From the project root directory, navigate to the docker-compose folder:
@@ -49,9 +49,9 @@ Then run the command:
 
 	docker-compose up --remove-orphans -d
 	
-This will start Docker running the Postgres DB image.
+This will start Docker running the PostgreSQL DB image.
 
-In order to run the Spring Boot Application, you will need first to compile it, if you didn't yet. [See here how to compile](#compiling).
+In order to run the Spring Boot Application, you will need first to compile it, if you didn't yet. [See here how to compile](#compile).
 
 #### Important Note:
 
@@ -68,10 +68,16 @@ You now may run the Spring Boot Application, go to the project root directory, a
 	
 ## Testing the application
 
+### Swagger UI
+
+You can use the Swagger UI, exposed at: http://localhost:8080/dockertutorial/swagger-ui.html
+
+### Directly in the Browser 
+
 This application exposes two rest end-points (GET verb), so simply using your favorite browser:
 
-* The first end-point will return a json with data of all the planets in our Solar System: http://localhost:8080/allPlanets
-* The second end-point will return data from a Solar System planet of your choice:  http://localhost:8080/planetByName/{name-of-the-solar-system-planet} (Where {name-of-the-solar-system-planet} should be replaced by something like Earth, Mars, Saturn, etc..)  
+* The first end-point will return a json with data of all the planets in our Solar System: http://localhost:8080/dockertutorial/allPlanets
+* The second end-point will return data from a Solar System planet of your choice:  http://localhost:8080/dockertutorial/planetByName/{name-of-the-solar-system-planet} (Where {name-of-the-solar-system-planet} should be replaced by something like Earth, Mars, Saturn, etc..)  
 
 Solar System Data extracted from: https://nssdc.gsfc.nasa.gov/planetary/factsheet/
 
