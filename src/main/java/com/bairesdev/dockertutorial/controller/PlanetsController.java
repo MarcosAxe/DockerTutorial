@@ -17,23 +17,23 @@ import com.bairesdev.dockertutorial.service.PlanetsService;
 @RestController
 public class PlanetsController {
 	
-	private PlanetsService planetsService;
+    private PlanetsService planetsService;
 	
-	@Autowired
-	private PlanetsController(PlanetsService planetsService) {
-		super();
-		this.planetsService = planetsService;
-	}
+    @Autowired
+    private PlanetsController(PlanetsService planetsService) {
+        super();
+        this.planetsService = planetsService;
+    }
 
-	@GetMapping(path = "/allPlanets", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(path = "/allPlanets", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Planets>> getAllPlanets() {
-		List<Planets> planetsList = planetsService.getAllPlanets();
+        List<Planets> planetsList = planetsService.getAllPlanets();
         return new ResponseEntity<>(planetsList, HttpStatus.OK);
     }
 	
 	@GetMapping(path = "/planetByName/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Planets> getPlanetByName(@PathVariable(required = true) String name) {
-		Planets planet = planetsService.getPlanetByName(name);
+        Planets planet = planetsService.getPlanetByName(name);
         return new ResponseEntity<>(planet, HttpStatus.OK);
     }
 	

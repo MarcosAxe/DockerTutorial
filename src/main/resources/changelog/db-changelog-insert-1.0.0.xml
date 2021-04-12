@@ -5,7 +5,7 @@
 	xmlns:pro="http://www.liquibase.org/xml/ns/pro"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.10.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.10.xsd">
-	
+
 	<changeSet author="Marcos Machado" id="2021-04-06 14:49 01">
 		<insert tableName="planets">
 			<column name="id" valueComputed="nextval('planets_seq')" />
@@ -21,7 +21,6 @@
 			<column name="ring_system" value="FALSE" />
 		</insert>
 	</changeSet>
-	
 	<changeSet author="Marcos Machado" id="2021-04-06 14:49 02">
 		<insert tableName="planets">
 			<column name="id" valueComputed="nextval('planets_seq')" />
@@ -37,7 +36,6 @@
 			<column name="ring_system" value="FALSE" />
 		</insert>
 	</changeSet>
-	
 	<changeSet author="Marcos Machado" id="2021-04-06 14:49 03">
 		<insert tableName="planets">
 			<column name="id" valueComputed="nextval('planets_seq')" />
@@ -53,7 +51,6 @@
 			<column name="ring_system" value="FALSE" />
 		</insert>
 	</changeSet>
-	
 	<changeSet author="Marcos Machado" id="2021-04-06 14:49 04">
 		<insert tableName="planets">
 			<column name="id" valueComputed="nextval('planets_seq')" />
@@ -69,7 +66,6 @@
 			<column name="ring_system" value="FALSE" />
 		</insert>
 	</changeSet>
-	
 	<changeSet author="Marcos Machado" id="2021-04-06 14:49 05">
 		<insert tableName="planets">
 			<column name="id" valueComputed="nextval('planets_seq')" />
@@ -85,7 +81,6 @@
 			<column name="ring_system" value="TRUE" />
 		</insert>
 	</changeSet>
-	
 	<changeSet author="Marcos Machado" id="2021-04-06 14:49 06">
 		<insert tableName="planets">
 			<column name="id" valueComputed="nextval('planets_seq')" />
@@ -101,7 +96,6 @@
 			<column name="ring_system" value="TRUE" />
 		</insert>
 	</changeSet>
-	
 	<changeSet author="Marcos Machado" id="2021-04-06 14:49 07">
 		<insert tableName="planets">
 			<column name="id" valueComputed="nextval('planets_seq')" />
@@ -117,7 +111,6 @@
 			<column name="ring_system" value="TRUE" />
 		</insert>
 	</changeSet>
-	
 	<changeSet author="Marcos Machado" id="2021-04-06 14:49 08">
 		<insert tableName="planets">
 			<column name="id" valueComputed="nextval('planets_seq')" />
@@ -133,7 +126,6 @@
 			<column name="ring_system" value="TRUE" />
 		</insert>
 	</changeSet>
-	
 	<changeSet author="Marcos Machado" id="2021-04-06 14:49 09">
 		<insert tableName="planets">
 			<column name="id" valueComputed="nextval('planets_seq')" />
@@ -149,7 +141,4 @@
 			<column name="ring_system" value="FALSE" />
 		</insert>
 	</changeSet>
-	
-	
-	
 </databaseChangeLog>

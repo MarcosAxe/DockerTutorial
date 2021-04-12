@@ -17,11 +17,11 @@ import lombok.Data;
 @Data
 public class Planets {
 	
-	@Id
+    @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "planets_seq")
     @SequenceGenerator(name = "planets_seq", sequenceName = "planets_seq", allocationSize = 1)
-	@JsonIgnore
+    @JsonIgnore
     private Long id;
 
     @Column(name = "name", nullable = false)
